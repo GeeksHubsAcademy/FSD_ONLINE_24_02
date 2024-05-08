@@ -16,3 +16,9 @@ $ git init
 4. creamos fichero .gitignore y añadimo la carpeta /node_modules
 
 5. Añadir "type": "module" en el package.json (import/export)
+
+6. instalar nodemon
+```sh
+$ npm in nodemon
+```
+script "dev": "nodemon ./src/app.js"

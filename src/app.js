@@ -18,7 +18,7 @@ app.put('/api/users', (req, res) => {
 })
 
 app.delete('/api/users', (req, res) => {
-  res.status(200).send('DELETE USER by id')
+  res.status(200).send('DELETE USER')
 })
 
 app.listen(PORT, () => {
