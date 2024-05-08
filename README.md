@@ -22,3 +22,10 @@ $ git init
 $ npm in nodemon
 ```
 script "dev": "nodemon ./src/app.js"
+
+7. Crear rutas
+```js
+app.get('/api/users', (req, res) => {
+  res.status(200).send('GET USERS')
+})
+```
