@@ -1,5 +1,5 @@
-// const express = require('express')
-import express from "express";
+const express = require('express')
+// import express from "express";
 
 const app = express();
 
@@ -20,7 +20,7 @@ app.post('/api/users', (req, res) => {
   // finalmente siempre mi api debe devolver una respuesta
 
 
-  res.status(200).send('CREATE USER')
+  // res.status(200).send('CREATE USER')
 })
 
 app.get('/api/users', (req, res) => {
