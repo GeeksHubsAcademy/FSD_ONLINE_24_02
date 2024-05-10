@@ -17,6 +17,8 @@ app.get('/api/users', userController.getUsers)
 app.put('/api/users', userController.updateUser)
 // eliminar user
 app.delete('/api/users/:id', userController.deleteUser)
+// recuperar usuario por id
+app.get('/api/users/:id', userController.findUserById)
 
 app.listen(PORT, () => {
   // console.log("Server is running on port" + PORT);
