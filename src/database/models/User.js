@@ -1,4 +1,3 @@
-const { log } = require("console");
 const db = require("../db");
 
 class User {
@@ -9,50 +8,6 @@ class User {
 	#isActive;
 	#roleId;
 	static idCounter = 1;
-
-	get id() {
-		return this.#id;
-	}
-
-	get name() {
-		return this.#name;
-	}
-
-	set name(name) {
-		this.#name = name;
-	}
-
-	get email() {
-		return this.#email;
-	}
-
-	set email(email) {
-		this.#email = email;
-	}
-
-	get password() {
-		return this.#password;
-	}
-
-	set password(password) {
-		this.#password = password;
-	}
-
-	get isActive() {
-		return this.#isActive;
-	}
-
-	set isActive(isActive) {
-		this.#isActive = isActive;
-	}
-
-	get roleId() {
-		return this.#roleId;
-	}
-
-	set roleId(roleId) {
-		this.#roleId = roleId;
-	}
 
 	static create(data) {
 		const user = { id: User.idCounter++, ...data };
